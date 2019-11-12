@@ -13,8 +13,7 @@ if(m!=n)
  	 printf("not a square matrix\n");
  	 return;
 }
-For(i=0;i<3;i++)
-P[i]=(int*)malloc(m*n*sizeof(int));
+p=(int*)malloc(m*n*sizeof(int));
 
 printf("Enter matrix elements\n");
 for(i=0;i<m;i++)
@@ -29,7 +28,7 @@ for(i=0,j=(n-1);i<m;i++,j--)
 
 for(i=0;i<m;i++)
  	 for(j=0;j<n;j++)
-   		  sum+= *(*(p+i)+j));
+   		  sum+= *(*(p+i)+j);
 
 printf("the primary matrix is = %d\n",d1);
 printf("the secondary matrix is = %d\n",d2);
