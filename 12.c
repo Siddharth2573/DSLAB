@@ -44,7 +44,6 @@ void main()
 	}
 }
 
-//end of main()----------------------------------------------------------------
 
 NODE* insert_f()
 {
@@ -87,7 +86,6 @@ temp2=temp2->next)
 return(head);
 }
 
-//---end of insert()------------------------------------------------
 del_e()
 {
 	NODE *temp1,*temp2;
@@ -133,7 +131,6 @@ del_e()
 }
 return;
 }
-//-end of delete()-------------------------------------------------------
 
 show()
 {
@@ -144,12 +141,12 @@ show()
 		return;
 	}
 	
-	printf("%-15s%-20s%-10s\n”,”NAME”,”ID	“,”SEM");
+	printf("NAME,ID,SEM");
 	N=head;
 
 	while(N!=NULL)
 	{
-		printf("%-15s%-20d%-10d\n”,N->name,N->id,N->sem");
+		printf("N->name,N->id,N->sem");
 		N=N->next;
 	}
 
