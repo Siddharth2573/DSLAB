@@ -75,8 +75,8 @@ void postorder(NODE root)
 {
   if(root!=NULL)
   {
-    postorder(root->right);
     postorder(root->left);
+    postorder(root->right);
     printf("%d\t",root->info);
   }
 }
